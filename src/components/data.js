@@ -2,7 +2,7 @@ import diplomaAPUCert from '../assets/Certs/DiplomaAPU.jpg';
 import RCCE1Cert from '../assets/Certs/RCCE1.jpg';
 import RCCE1CompleteCert from '../assets/Certs/RCCE1_complete.jpg';
 import RCCE2CompleteCert from '../assets/Certs/RCCE2_complete.jpg';
-import degreeAPUCert from '../assets/Certs/DiplomaAPU.jpg';
+import degreeAPUCert from '../assets/Certs/DegreeAPU.jpg';
 import {SiHackerone} from 'react-icons/si';
 import {FaPhp} from 'react-icons/fa';
 import {AiOutlineBug, AiFillWindows} from 'react-icons/ai';
