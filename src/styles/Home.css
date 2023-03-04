@@ -1,5 +1,4 @@
 .home{
-    width: 50%;
     margin: 0 auto;
     font-size: 18px;
     height: 100%;
@@ -10,84 +9,59 @@ ul{
     padding: 0;
     list-style-type: none;
 }
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
 /* personal information */
 .profile-img{
-    margin-top: 50px;
+    margin: 50px;
 }
 
 .profile-img img{
-    border:1px solid white;
-    border-radius: 20px 20px 0 0;
-    box-shadow: 5px 5px 20px #000;    width: 150px;
-    height: 200px;
+    border:2px solid white;
+    border-radius: 50%; 
+    box-shadow: 5px 5px 20px #000;    
+    width: 200px;
     object-fit: cover;
 }
 
 .intro-text{
-    text-align: left;
-    width: 60%;
-    margin: 0 auto;
+    margin: 0;
+    padding: 40px 50px;
+    text-align: center;
+    width: 460px;
 }
 
-.intro-text .greeting{
-    margin-left: -100px;
+.intro-text p{
+    text-align: left;
 }
 
 .positions-list-div{
     text-align: left;
 }
 .positions-list-div p{
-    margin: 0;
+    /* margin-left: 50px; */
 }
 .positions-list{
     float: right;
 }
-
-/* social media and contact method */
-.social-contact{
-    position: fixed;
-    bottom: 1%;
-    right: 2%;
-}
-
-.social-list{
-    font-size: 30px;
-}
-
 /* skillset */
 .skillsets{
-    position: fixed;
-    bottom:1%;
-    left: 2%;
     background-color: rgba(255,255,255,0.1);
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px 50px;
 }
 
 .skillList{
-    height: 200px;
+    max-height: 90%;
     min-width: 300px;
     overflow-y: scroll;
 }
-/* width */
-.skillsets::-webkit-scrollbar {
-    display:none;
-}
-
-/* Track */
-.skillsets ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-
-/* Handle */
-.skillsets::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-/* Handle on hover */
-.skillsets::-webkit-scrollbar-thumb:hover {
-   background: #555; 
-}
+.skillList::-webkit-scrollbar { width: 0 !important }
+.skillList { overflow: -moz-scrollbars-none; }
+.skillList { -ms-overflow-style: none; }
 
 .searchSkill{
     text-align: left;

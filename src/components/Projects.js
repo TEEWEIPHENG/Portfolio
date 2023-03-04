@@ -4,6 +4,7 @@ import {Card, ListGroup, Container, Row, Col} from 'react-bootstrap';
 import Iframe from 'react-iframe';
 import {BiTime} from 'react-icons/bi'
 import {TiTick} from 'react-icons/ti'
+import ComingSoon from './assets/Comingsoon.jpg';
 
 function statusLogo(status){
   if(!status.localeCompare("In Progress")){
@@ -23,18 +24,21 @@ function insertCol(project){
           <Card.Title>{project.title}</Card.Title>
         </Card.Header>
         <Card.Body>
-        <Iframe url={project.refLink}
-              width='100%'
-              height='400rem'
-              display="block"
-              position="relative"/>
-          <Card.Text style={{textAlign:'left', minHeight:'10rem', marginTop:'10px'}}>
+          {project.refLink == "" ? <img src={ComingSoon} alt="Coming soon" style={{width:'100%'}}/> :
+            <Iframe url={project.refLink}
+                          width='100%'
+                          height='400rem'
+                          display="block"
+                          position="relative"/>
+          }
+        
+          <Card.Text style={{textAlign:'left', minHeight:'5rem', marginTop:'10px'}}>
             {project.describe}
           </Card.Text>
-          <Container style={{minHeight:'10rem'}}>
-            <Row xs={1} md={4} className="g-1">
+          <Container style={{minHeight:'5rem'}}>
+            <Row xs={1} md={4} className="g-1" style={{textAlign:'center'}}>
               {project.techs.map(tech=>{
-                return <Col className='bg-secondary' style={{borderRadius:'50px',padding:'10px',}}>{tech}</Col>
+                return <div className='bg-secondary' style={{borderRadius:'50px',padding:'10px 5px', margin:'5px'}}>{tech}</div>
               })}
             </Row>
           </Container>

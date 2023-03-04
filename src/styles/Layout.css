@@ -1,16 +1,13 @@
 .float-navbar{
-    display: flex;
-    position:fixed;
-    bottom: 1%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -100px;
-
-    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
-    border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
 }
-
+.page-name{
+    width: 25%;
+}
 .navbar-item{
     font-size: 30px;
     color: white;
@@ -19,11 +16,14 @@
     padding: 0 5px;
 }
 
-@media only screen and (max-width: 1200px) {
-    .float-navbar{
-        left: 100px;
-        display: flex;
-        flex-direction: column;
+.social-list{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+} 
 
-    }
+.social-list li{
+    margin:0 5px;
+}
+@media only screen and (max-width: 1200px) {
 }

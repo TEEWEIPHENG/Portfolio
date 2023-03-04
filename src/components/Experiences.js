@@ -7,7 +7,6 @@ import 'react-vertical-timeline-component/style.min.css';
 function Experiences() {
   return (
     <div>
-      <h1>Experiences</h1>
       <div className='exp-slider'>
         <VerticalTimeline>
           {experiences.map((exp)=>{
@@ -24,7 +23,7 @@ function Experiences() {
                 <div className='caption-block'>
                   <h3>{exp.title}</h3>
                   <h4>{exp.company}</h4>
-                  <p>{exp.describe}</p>
+                  <p style={{textAlign:"justify"}}>{exp.describe}</p>
                   <p><a href={exp.reflink} target="_blank">{exp.reflink}</a></p>
                 </div>
               </VerticalTimelineElement>
