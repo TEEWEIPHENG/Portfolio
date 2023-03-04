@@ -85,13 +85,18 @@ ul{
         text-align: center;
         width: 100%;
     }
+    .page-name{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+    }
     .intro-text{
-        height: 300px;
+        width: 100%;
     }
     .skillsets{
         position:static;
-        width: 50%;
-        max-height: 300px;
+        width: 100%;
         margin: 0 auto;
     }
 }

@@ -18,29 +18,27 @@ function Layout() {
     value: 'https://github.io/#my_github_page',
     copied: false,
   };
-  const [activeNav, setActiveNav] = useState(introduction.name);
-  const currentUrl = window.location.href;
 
   return (
     <div className='layout'>
       <div className='float-navbar'>
           <div className='page-name'>
-            <OverlayTrigger key="Home">
-              <NavLink className='navbar-item' to="/" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })} onClick={() => setActiveNav(introduction.name)}>{activeNav}</NavLink >
+            <OverlayTrigger key="logo" placement="bottom" overlay={<Tooltip>{introduction.name}</Tooltip>}>
+              <NavLink className='navbar-item' to="/Portfolio" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })}>{introduction.name}</NavLink >
             </OverlayTrigger>
           </div>
           <div className='navItems'>
             <OverlayTrigger key="Home" placement="bottom" overlay={<Tooltip>Home</Tooltip>}>
-              <NavLink className='navbar-item' to="/" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })} onClick={() => setActiveNav('TEE WEI PHENG')}><BsHouse /></NavLink >
+              <NavLink className='navbar-item' to="/Portfolio" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })}><BsHouse /></NavLink >
             </OverlayTrigger>
             <OverlayTrigger key="Experiences" placement="bottom" overlay={<Tooltip>Experiences</Tooltip>}>
-              <NavLink className='navbar-item' to="/experiences" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })} onClick={() => setActiveNav('Experiences')}><MdWorkOutline/></NavLink>
+              <NavLink className='navbar-item' to="/Portfolio/experiences" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })}><MdWorkOutline/></NavLink>
             </OverlayTrigger>
             <OverlayTrigger key="Projects" placement="bottom" overlay={<Tooltip>Projects</Tooltip>}>
-              <NavLink className='navbar-item' to="/projects" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })} onClick={() => setActiveNav('Projects')}><AiOutlineFolder /></NavLink >
+              <NavLink className='navbar-item' to="/Portfolio/projects" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })}><AiOutlineFolder /></NavLink >
             </OverlayTrigger>
             <OverlayTrigger key="Certificates" placement="bottom" overlay={<Tooltip>Certificates</Tooltip>}>
-              <NavLink className='navbar-item' to="/certificates" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })} onClick={() => setActiveNav('Certificates')}><TbFileCertificate/></NavLink >
+              <NavLink className='navbar-item' to="/Portfolio/certificates" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })}><TbFileCertificate/></NavLink >
             </OverlayTrigger>
           </div>
           <div className='social-contact'>

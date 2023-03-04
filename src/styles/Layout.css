@@ -26,4 +26,8 @@
     margin:0 5px;
 }
 @media only screen and (max-width: 1200px) {
+    .float-navbar{
+        justify-content: center;
+        flex-direction: column;
+    }
 }

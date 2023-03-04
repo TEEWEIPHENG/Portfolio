@@ -1,11 +1,12 @@
 import diplomaAPUCert from '../assets/Certs/DiplomaAPU.jpg';
 import RCCE1Cert from '../assets/Certs/RCCE1.jpg';
+import RCCE1CompleteCert from '../assets/Certs/RCCE1_complete.jpg';
 import RCCE2CompleteCert from '../assets/Certs/RCCE2_complete.jpg';
 import degreeAPUCert from '../assets/Certs/DegreeAPU.jpg';
-import apulogo from '../assets/logo/logoAPU.jpg';
 import {SiHackerone} from 'react-icons/si';
 import {FaPhp} from 'react-icons/fa';
-import {AiFillWindows} from 'react-icons/ai';
+import {AiOutlineBug, AiFillWindows} from 'react-icons/ai';
+import {MdSchool} from 'react-icons/md';
 
 export const contactInfo = {
     linkedin: "https://www.linkedin.com/in/teeweipheng",
@@ -147,7 +148,7 @@ export const experiences = [
         contentStyle:{ background: 'rgb(33, 150, 243)', color: '#fff' },
         contentArrowStyle:{ borderRight: '7px solid  rgb(33, 150, 243)'},
         iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-        icon: <img src={apulogo} width='40px' style={{borderRadius:'50%', margin:'10px'}}/>,
+        icon: <MdSchool/>,
     },
     {
         title: "Software Engineer Intern",
@@ -173,7 +174,7 @@ export const experiences = [
         contentStyle:{ background: 'rgb(33, 150, 243)', color: '#fff' },
         contentArrowStyle:{ borderRight: '7px solid  rgb(33, 150, 243)'},
         iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-        icon: <img src={apulogo} width='40px' style={{borderRadius:'50%', margin:'10px'}}/>,
+        icon: <MdSchool/>,
     },
 
 ]
@@ -213,6 +214,21 @@ export const projects = [
         ],
         duration: "Completed at July 2022",
         field: "Web Development, Cybersecurity"
+    },
+    {
+        title: "Portfolio",
+        describe: `Portfolio project has been developed for people who want to know more about me.
+        I learnt the React JS through YouTube's tutorial video and reading the documentation. 
+        After implementation stage, I have deployed the portfolio website to GitHub page.
+        `,
+        refLink:"",
+        techs:[
+            "React JS",
+            "GitHub Page",
+        ],
+        duration: "Completed at July 2022",
+        field: "Web Development",
+
     },
 ]
 
