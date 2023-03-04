@@ -12,10 +12,10 @@ function App() {
       <Router>
         <Layout />
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/projects" element={<Projects/>}/>
-          <Route path="/experiences" element={<Experiences />}/>
-          <Route path="/certificates" element={<Certificates />}/>
+          <Route path="/Portfolio" element={<Home />}/>
+          <Route path="/Portfolio/projects" element={<Projects/>}/>
+          <Route path="/Portfolio/experiences" element={<Experiences />}/>
+          <Route path="/Portfolio/certificates" element={<Certificates />}/>
         </Routes>
         <ScrollButton />
       </Router>
