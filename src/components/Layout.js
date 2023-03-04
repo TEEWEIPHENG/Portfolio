@@ -15,7 +15,7 @@ function Layout() {
     alert("Copied to the clipboard! Share it to your friend now!")
   }, [])
   var state = {
-    value: 'https://github.io/#my_github_page',
+    value: 'https://teeweipheng.github.io/Portfolio/',
     copied: false,
   };
 
