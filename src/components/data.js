@@ -181,26 +181,26 @@ export const experiences = [
 
 
 export const projects = [
-    {
-        title: "Stock Analysis",
-        describe: "This is a Stock analysis project",
-        refLink:"",
-        techs:[
-            "Python",
-        ],
-        duration: "In Progress",
-        field: "Cybersecurity",
-    },
-    {
-        title: "Bug Bounty Automative tool",
-        describe: "My Bug Bounty automative tool.",
-        refLink:"",
-        techs:[
-            "Bash Shell",
-        ],
-        duration: "In Progress",
-        field: "Cybersecurity",
-    },
+    // {
+    //     title: "Stock Analysis",
+    //     describe: "This is a Stock analysis project",
+    //     refLink:"",
+    //     techs:[
+    //         "Python",
+    //     ],
+    //     duration: "In Progress",
+    //     field: "Cybersecurity",
+    // },
+    // {
+    //     title: "Bug Bounty Automative tool",
+    //     describe: "My Bug Bounty automative tool.",
+    //     refLink:"",
+    //     techs:[
+    //         "Bash Shell",
+    //     ],
+    //     duration: "In Progress",
+    //     field: "Cybersecurity",
+    // },
     {
         title: "Threat Intelligence Platform",
         describe: "Threat Intelligence Platform is my Final Year Project. It provide user to manage threats and communicate with other team member.",
