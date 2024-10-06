@@ -18,16 +18,10 @@ function Certificates() {
                   </Card.Header>
                   <Card.Body>
                     <Card.Img variant='top' src={cert.img} className='certImg'/>
-                    <Card.Text   style={{minHeight:'5rem'}}>
-                      <p style={{textAlign:"justify"}}>
-                        {cert.describe.split('\n').map((line, index) => {
-                          return <span key={index}>{line}<br/></span>
-                        })}
-                        </p>
-                    </Card.Text>
                     <Card.Text>
-                    <div style={{textAlign:"left"}}>
-                      <small className='text-muted'>Archive at</small>  <i>{cert.achieveDate}</i>
+                    <div style={{display:"flex", justifyContent:"space-evenly"}}>
+                      <div className='text-muted'>Archive at</div> 
+                      <div>{cert.achieveDate}</div>
                     </div>
                     </Card.Text>
                   </Card.Body>
