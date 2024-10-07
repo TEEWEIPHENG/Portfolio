@@ -1,10 +1,10 @@
 import React from 'react'
-import {projects} from './data';
+import {projects} from '../Data/data';
 import {Card, ListGroup, Container, Row, Col} from 'react-bootstrap';
 import Iframe from 'react-iframe';
 import {BiTime} from 'react-icons/bi'
 import {TiTick} from 'react-icons/ti'
-import ComingSoon from './assets/Comingsoon.jpg';
+import ComingSoon from '../../assets/Comingsoon.jpg';
 
 function statusLogo(status){
   if(!status.localeCompare("In Progress")){

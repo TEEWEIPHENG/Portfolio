@@ -1,11 +1,11 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import Home from './components/Home'
-import Projects from './components/Projects'
-import Experiences from './components/Experiences'
-import Certificates from './components/Certificates'
-import Layout from './components/Layout';
-import ScrollButton from './components/ScrollButton';
+import Home from './components/Home/index'
+import Projects from './components/Projs/index'
+import Experiences from './components/Exps/index'
+import Certificates from './components/Certs/index'
+import Layout from './components/Layout/index';
+import ScrollButton from './components/common/ScrollButton/index';
 function App() {
   return (
     <div className="App">

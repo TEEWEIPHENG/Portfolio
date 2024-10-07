@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { certificates } from './data';
-import '../styles/Certificates.css';
+import { certificates } from '../Data/data';
+import './style.css';
 function Certificates() {
   return (
     <div className='certificates'>

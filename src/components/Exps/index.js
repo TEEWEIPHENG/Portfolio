@@ -1,6 +1,6 @@
 import React from 'react'
-import {experiences} from './data.js';
-import '../styles/Experiences.css';
+import {experiences} from '../Data/data';
+import './style.css';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 

@@ -1,0 +1,9 @@
+.social-list{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.social-list li{
+    margin:0 5px;
+}
