@@ -1,19 +1,51 @@
-.float-navbar{
-    margin-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    justify-content: space-between;
-    display: flex;
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 50px;
+    border:#bdc3c7 1px solid;
+    margin: 20px 60px;
+    justify-content: center; /* Center navbar content */
 }
 .page-name{
     width: 25%;
 }
+/* Style for Navbar.Brand */
+.navbar-brand {
+    color: white !important; /* Set default color */
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 60px;
+}
+
 .navbar-item{
-    font-size: 30px;
     color: white;
     text-align: center;
-    margin: 0 10px;
+    margin: 0 20px;
     padding: 0 5px;
+    position: relative; /* Required for the ::after element */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+.navbar-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left:  50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 5px;
+    background-color: #e6e6e6; /* The color of the shape */
+    border-radius: 20px; /* Makes the shape rounded */
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+/* On hover, change the color */
+.navbar-item:hover {
+    color: #a5a5a5 !important; /* Set desired color on hover */
+}
+
+.navbar-item.active:hover::after {
+    background-color: #a5a5a5; /* Slightly darker on hover */
+    width: 90%; /* Slightly larger on hover */
 }
 
 @media only screen and (max-width: 1200px) {

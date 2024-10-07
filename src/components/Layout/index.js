@@ -1,48 +1,23 @@
 import React from 'react';
 import './style.css';
-import {OverlayTrigger, Tooltip } from 'react-bootstrap';
+import {Navbar, Container, Button } from 'react-bootstrap';
 import {NavLink } from 'react-router-dom';
-import {MdWorkOutline} from 'react-icons/md';
-import {BsHouse}from 'react-icons/bs';
-import {AiOutlineFolder}from 'react-icons/ai';
-import {TbFileCertificate}from'react-icons/tb';
-import {introduction, contactInfo} from "../Data/data";
-import {AiOutlineWhatsApp, AiOutlineMail,AiOutlineLinkedin, AiOutlineGithub, AiOutlineShareAlt} from "react-icons/ai";
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { introduction } from '../Data/data';
 
 function Layout() {
-  const onClick = React.useCallback(()=> {
-    alert("Copied to the clipboard! Share it to your friend now!")
-  }, [])
-  var state = {
-    value: 'https://teeweipheng.github.io/Portfolio/',
-    copied: false,
-  };
-
   return (
-    <div className='layout'>
-      <div className='float-navbar'>
-          <div className='page-name'>
-            <OverlayTrigger key="logo" placement="bottom" overlay={<Tooltip>{introduction.name}</Tooltip>}>
-              <NavLink className='navbar-item' to="/Portfolio" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })}>{introduction.name}</NavLink >
-            </OverlayTrigger>
-          </div>
-          <div className='navItems'>
-            <OverlayTrigger key="Home" placement="bottom" overlay={<Tooltip>Home</Tooltip>}>
-              <NavLink className='navbar-item' to="/Portfolio" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })}><BsHouse /></NavLink >
-            </OverlayTrigger>
-            <OverlayTrigger key="Experiences" placement="bottom" overlay={<Tooltip>Experiences</Tooltip>}>
-              <NavLink className='navbar-item' to="/Portfolio/experiences" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })}><MdWorkOutline/></NavLink>
-            </OverlayTrigger>
-            <OverlayTrigger key="Projects" placement="bottom" overlay={<Tooltip>Projects</Tooltip>}>
-              <NavLink className='navbar-item' to="/Portfolio/projects" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })}><AiOutlineFolder /></NavLink >
-            </OverlayTrigger>
-            <OverlayTrigger key="Certificates" placement="bottom" overlay={<Tooltip>Certificates</Tooltip>}>
-              <NavLink className='navbar-item' to="/Portfolio/certificates" style={({ isActive }) => ({color: isActive ? '#00A3FF' : 'white' })}><TbFileCertificate/></NavLink >
-            </OverlayTrigger>
-          </div>
-      </div>
-    </div>
+    <Navbar expand="lg" className="navbar">
+       <Container fluid>
+        <Navbar.Brand className='navbar-brand' href="/Portfolio">{introduction.name}</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <NavLink className='navbar-item' to="/Portfolio" end>Home</NavLink >
+          <NavLink className='navbar-item' to="/Portfolio/experiences" >Experiences</NavLink>
+          <NavLink className='navbar-item' to="/Portfolio/projects" >Projects</NavLink >
+          <NavLink className='navbar-item' to="/Portfolio/certificates" >Certificates</NavLink >
+        </Navbar.Collapse>
+       </Container>
+    </Navbar>
   )
 }
 
