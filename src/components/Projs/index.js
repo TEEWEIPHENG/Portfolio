@@ -1,6 +1,6 @@
 import React from 'react'
 import {projects} from '../Data/data';
-import {Card, ListGroup, Container, Row, Col} from 'react-bootstrap';
+import {Card, Container, Row, Col} from 'react-bootstrap';
 import Iframe from 'react-iframe';
 import {BiTime} from 'react-icons/bi'
 import {TiTick} from 'react-icons/ti'
@@ -15,8 +15,6 @@ function statusLogo(status){
   }
 }
 function insertCol(project){
-  var count = 4;
-
   return(
     <Col >
       <Card className="bg-dark text-white">
@@ -24,7 +22,7 @@ function insertCol(project){
           <Card.Title>{project.title}</Card.Title>
         </Card.Header>
         <Card.Body>
-          {project.refLink == "" ? <img src={ComingSoon} alt="Coming soon" style={{width:'100%'}}/> :
+          {project.refLink === "" ? <img src={ComingSoon} alt="Coming soon" style={{width:'100%'}}/> :
             <Iframe url={project.refLink}
                           width='100%'
                           height='400rem'
@@ -51,7 +49,6 @@ function insertCol(project){
   )
 }
 function Projects() {
-  var count = 0;
   return (
     <div className='projects'>
       <Container>

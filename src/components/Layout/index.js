@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import {Navbar, Container, Button } from 'react-bootstrap';
+import {Navbar, Container} from 'react-bootstrap';
 import {NavLink } from 'react-router-dom';
 import { introduction } from '../Data/data';
 

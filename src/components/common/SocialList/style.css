@@ -1,9 +1,49 @@
-.social-list{
-    font-size: 30px;
-    display: flex;
-    justify-content: space-around;
-} 
+.social-contact {
+    position: fixed; /* Keep it fixed in place while scrolling */
+    right: 20px; /* Position from the right side */
+    top: 80%; /* Center it vertically */
+    transform: translateY(-50%); /* Adjust for true vertical centering */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+  
+.social-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+}
+  
+.social-list li {
+    margin: 10px 0; /* Space between items */
+}
+  
+.social-list a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Default icon color */
+    font-size: 30px; /* Set icon size */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+  
+.social-list a:hover {
+    color: #000000; /* Change color on hover */
+}
 
-.social-list li{
-    margin:0 5px;
+#whatsapp :hover{
+    color: #128C7E;
+}
+
+#linkedin :hover{
+    color: #0a66c2;
+}
+#github :hover{
+    color: black;
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    .social-list a {
+        font-size: 35px; /* Set icon size */
+    }
+
 }

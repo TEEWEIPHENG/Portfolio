@@ -17,11 +17,13 @@
     "react-bootstrap": "^2.6.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
+    "react-fullpage": "^0.1.19",
     "react-icons": "^4.6.0",
     "react-iframe": "^1.8.5",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "react-scrollbars-custom": "^4.1.1",
+    "react-share": "^5.1.0",
     "react-vertical-timeline-component": "^3.5.2",
     "styled-components": "^5.3.8",
     "web-vitals": "^2.1.4"

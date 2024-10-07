@@ -1,14 +1,13 @@
 .navbar{
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 50px;
-    border:#bdc3c7 1px solid;
-    margin: 20px 60px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border:#bdc3c7 2px solid;
+    margin: 20px auto;
     justify-content: center; /* Center navbar content */
+    max-width: 80%;
 }
-.page-name{
-    width: 25%;
-}
+
 /* Style for Navbar.Brand */
 .navbar-brand {
     color: white !important; /* Set default color */
@@ -28,12 +27,12 @@
 .navbar-item.active::after {
     content: '';
     position: absolute;
-    bottom: -13px;
+    bottom: -15px;
     left:  50%;
     transform: translateX(-50%);
     width: 70%;
     height: 5px;
-    background-color: #e6e6e6; /* The color of the shape */
+    background-color: #d8d8d8; /* The color of the shape */
     border-radius: 20px; /* Makes the shape rounded */
     transition: width 0.5s ease, background-color 0.5s ease;
 }
@@ -47,10 +46,25 @@
     background-color: #a5a5a5; /* Slightly darker on hover */
     width: 90%; /* Slightly larger on hover */
 }
+/* Override the default toggle button icon color */
+.navbar-toggler {
+    border-color: white; /* Set the border color to white */
+}
 
-@media only screen and (max-width: 1200px) {
-    .float-navbar{
+/* Change the color of the collapsed navbar icon (bars) */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar-brand{
+        margin-left: 20px;
+    }
+    #responsive-navbar-nav{
+        text-align: left;
+        margin-top: 10px;
+        /* display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column; */
     }
 }

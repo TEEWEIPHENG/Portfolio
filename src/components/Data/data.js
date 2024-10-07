@@ -17,9 +17,9 @@ export const contactInfo = {
 
 export const introduction = {
     name : "TEE WEI PHENG",
-    industry : "Cyber Security",
-    position: "Fresh Graduate",
+    title: "Full-Stack Developer",
     positionsList: ["Penetration Tester", "Security Analyst", "Full-stack developer", "Software Engineer"],
+    description: "I'm a full-stack web developer."
 }
 
 export const skillsets = [

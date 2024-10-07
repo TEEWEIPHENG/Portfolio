@@ -1,41 +1,23 @@
-
-/* skillset */
 .skillsets{
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 10px;
-    padding: 30px 50px;
-}
-
-.skillList{
-    max-height: 90%;
-    min-width: 300px;
-    overflow-y: scroll;
-}
-.skillList::-webkit-scrollbar { width: 0 !important }
-.skillList { overflow: -moz-scrollbars-none; }
-.skillList { -ms-overflow-style: none; }
-
-.searchSkill{
-    text-align: left;
-    display: relative;
-    padding-bottom: 10px;
-}
-.skillset-tips{
-    display: absolute;
-    top: 0;
-    right: 0;
-}
-.skillList{
+    background-color: rgba(0,0,0, 0.5);
+    padding: 30px 10px; 
+    margin: 50px 0 0 0;
     text-align: left;
 }
-.skillList ul li{
-    margin-bottom: 10px;
-}
 
-@media screen and (max-width: 1200px) {
-    .skillsets{
-        position:static;
-        width: 100%;
-        margin: 0 auto;
-    }
+.skills{
+    padding: 5px 0;
+}
+.star-container {
+    display: inline-block;
+}
+  
+.star {
+    font-size: 20px;
+    color: rgb(200, 239, 255); /* Color for empty stars */
+    margin-right: 2px;
+}
+  
+.star.filled {
+    color: rgb(29, 98, 228); /* Color for filled stars */
 }

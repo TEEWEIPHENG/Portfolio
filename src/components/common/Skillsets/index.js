@@ -1,83 +1,35 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-import ProgressBar from 'react-bootstrap/ProgressBar';
-import Dropdown from 'react-bootstrap/Dropdown';
-import { DropdownButton, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import {skillsets} from "../Data/data";
+import React from 'react';
+import { skillsets } from "../../Data/data";
+import {Col, Row} from 'react-bootstrap';
 import './style.css';
 
-function Skillsets(){
-    const[output,setdata] = useState(['All']);
-    const skillFilter = (e)=>{
-      setdata(e);
-      ReactDOM.render(displaySkillsetList(e), document.getElementById('skillList'));
-    }
-    if(field.includes('All')){
-        return skillsets.map(skill => {
-          return(
-            <OverlayTrigger overlay={
-              <Tooltip>
-                <p style={{textAlign:'justify'}}>{skill.describe}</p>
-                <div style={{textAlign:"left"}}>
-                  {skill.child.map(subSkill=>{
-                    return <div>{subSkill}</div>
-                  })}
-                </div>
-              </Tooltip>
-            }>
-              <li>
-                {skill.name}
-                <ProgressBar now={skill.proficiency}/>
-              </li>
-            </OverlayTrigger>
-          )
-        })
-      }else{
-        return skillsets.filter(skill=>skill.field.includes(field)).map(filteredSkill=>{
-          return(
-            <OverlayTrigger overlay={
-              <Tooltip>
-                <p style={{textAlign:'justify'}}>{filteredSkill.describe}</p>
-                <div style={{textAlign:"left"}}>
-                    {filteredSkill.child.map(subSkill=>{
-                       return <div>{subSkill}</div>
-                    }
-                    )}
-                </div>
-                
-              </Tooltip>
-            }>
-              <li>
-                {filteredSkill.name}
-                <ProgressBar now={filteredSkill.proficiency}/>
-              </li> 
-            </OverlayTrigger>
-            
-          )
-        })
-      }
+function Skillsets() {
+  const renderStars = (proficiency) => {
+    const totalStars = 5;
+    const filledStars = Math.round(proficiency / 20); 
 
-    return ( <div className='skillsets'>
-        <div className='searchSkill'>
-          
-        <strong style={{float:"right"}}>Skillset</strong>
-            <DropdownButton variant='secondary' title={output} onSelect={skillFilter}>
-              <Dropdown.Item eventKey="All" selected>All</Dropdown.Item>
-              <Dropdown.Item eventKey="Cybersecurity">Cybersecurity</Dropdown.Item>
-              <Dropdown.Item eventKey="Software Development">Software Development</Dropdown.Item>
-              {/* <Dropdown.Item eventKey="Cloud Computing">Cloud Computing</Dropdown.Item>
-              <Dropdown.Item eventKey="Artificial Intelligent">Artificial Intelligent</Dropdown.Item>
-              <Dropdown.Item eventKey="IoT">Internet of Things</Dropdown.Item> */}
-            </DropdownButton>
-        </div>
+    return (
+      <div className="star-container">
+        {[...Array(totalStars)].map((_, index) => (
+          <span key={index} className={index < filledStars ? 'star filled' : 'star'}>&#9733;</span> // &#9733; is the HTML code for a star (★)
+        ))}
+      </div>
+    );
+  };
 
-        <div className='skillList'>
-          <ul id='skillList'>
-            {displaySkillsetList('All')}
-          </ul>
-        </div>
-    </div>)
-    
-  }
+  return (
+      <Row className='skillsets'>
+        <h1>My Skills</h1>
+        {skillsets.map((skill) => (
+          <Col xs={6} lg={4} xl={3}>
+            <Row className='skills'>
+                <Col xs={5}>{skill.name}</Col>
+                <Col xs={4}>{renderStars(skill.proficiency)}</Col>
+            </Row>
+          </Col>
+        ))}
+      </Row>
+  );
+}
 
-export default Skillsets();
+export default Skillsets;
