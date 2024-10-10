@@ -3,3 +3,10 @@
     border-radius: 20px;
     padding: 4rem;
 }
+
+.vertical-timeline-element-date{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    padding: 4rem;
+    text-align: center !important;
+}

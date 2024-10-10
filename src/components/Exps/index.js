@@ -21,10 +21,11 @@ function Experiences() {
                   icon={exp.icon}
                 >
                 <div className='caption-block'>
-                  <h3>{exp.title}</h3>
-                  <h4>{exp.company}</h4>
+                  <h3 style={{color:'#'}}>{exp.title}</h3>
+                  <h5>{exp.company}</h5>
+                  <hr/>
                   <p style={{textAlign:"justify"}}>{exp.describe}</p>
-                  <p><a href={exp.reflink} target="_blank">{exp.reflink}</a></p>
+                  {/* <p><a href={exp.reflink} target="_blank">{exp.reflink}</a></p> */}
                 </div>
               </VerticalTimelineElement>
             )

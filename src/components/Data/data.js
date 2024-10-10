@@ -5,6 +5,11 @@ import degreeAPUCert from '../../assets/Certs/DegreeAPU.jpg';
 import {FaPhp} from 'react-icons/fa';
 import {AiFillWindows} from 'react-icons/ai';
 import {MdSchool} from 'react-icons/md';
+import EtiqaIcon from '../../assets/Logo/etiqaIcon.jpg';
+import { Image } from 'react-bootstrap';
+import SwiftXICon from '../../assets/Logo/swiftXIcon.jpg';
+import APULogo from '../../assets/Logo/logoAPU.jpg';
+import goSMAC from '../../assets/Logo/gosmac_logo.jpg';
 
 export const contactInfo = {
     linkedin: "https://www.linkedin.com/in/teeweipheng",
@@ -116,10 +121,10 @@ export const experiences = [
         I mainly practiced C# APS .NET and React JS with Visual Studio, VS Code, SSMS, Postman, Git, etc.`,
         duration: "November 2023 - Current",
         reflink: "",
-        contentStyle:{ background: 'rgb(33, 150, 243)', color: '#fff' },
-        contentArrowStyle:{ borderRight: '7px solid  rgb(33, 150, 243)'},
-        iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-        icon: <AiFillWindows/>,
+        contentStyle:{ background: 'rgb(238, 210, 2, 0.5)', color: '#fff' },
+        contentArrowStyle:{ borderRight: '7px solid  rgb(238, 210, 2, 0.5)'},
+        iconStyle: { background: 'rgb(0, 0, 0, 0.2)', color: '#fff' },
+        icon: <Image src={EtiqaIcon} width="100%" height='100%' style={{borderRadius:'50%'}}/>,
     },
     {
         title: "Software Developer",
@@ -129,10 +134,10 @@ export const experiences = [
         I also used to setup a content server IIS through Virtual Machine.`,
         duration: "November 2022 - November 2023",
         reflink: "",
-        contentStyle:{ background: 'rgb(33, 150, 243)', color: '#fff' },
-        contentArrowStyle:{ borderRight: '7px solid  rgb(33, 150, 243)'},
-        iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-        icon: <AiFillWindows/>,
+        contentStyle:{ background: 'rgb(0, 0, 0, 0.2)', color: '#fff' },
+        contentArrowStyle:{ borderRight: '7px solid  rgb(0, 0, 0, 0.2)'},
+        iconStyle: { background: 'rgb(0, 0, 0,0)', color: '#fff' },
+        icon: <Image src={SwiftXICon} width="100%" height='100%' style={{borderRadius:'50%'}}/>,
     },
     {
         title: "BSc (Hons) in Computer Science (Cyber Security)",
@@ -141,10 +146,11 @@ export const experiences = [
         I also experienced wireless hacking with Air-Crack tool, deployed AWS cloud infrastructure, performed vulnerability assessment, network administration, etc.`,
         duration: "Aug 2021 - Aug 2022",
         reflink: "https://www.youtube.com/watch?v=dRXHXnF2bCE",
-        contentStyle:{ background: 'rgb(33, 150, 243)', color: '#fff' },
-        contentArrowStyle:{ borderRight: '7px solid  rgb(33, 150, 243)'},
-        iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-        icon: <MdSchool/>,
+        contentStyle:{ background: 'rgb(0, 0, 0, 0.2)', color: '#fff' },
+        contentArrowStyle:{ borderRight: '7px solid  rgb(0, 0, 0, 0.2)'},
+        iconStyle: { background: 'rgb(0, 0, 0, 0.2)', color: '#fff' },
+        icon: <Image src={APULogo} width="100%" height='100%' style={{borderRadius:'50%'}}/>,
+
     },
     {
         title: "Software Engineer Intern",
@@ -154,10 +160,10 @@ export const experiences = [
         `,
         duration: "July 2021 - November 2021",
         reflink: "https://jobs.go-smac.com/",
-        contentStyle:{ background: 'rgb(33, 150, 243)', color: '#fff' },
-        contentArrowStyle:{ borderRight: '7px solid  rgb(33, 150, 243)'},
+        contentStyle:{ background: 'rgb(0, 0, 0, 0.2)', color: '#fff' },
+        contentArrowStyle:{ borderRight: '7px solid  rgb(0, 0, 0, 0.2)'},
         iconStyle: { background: '#787cb5', color: '#fff' },
-        icon: <FaPhp/>,
+        icon: <Image src={goSMAC} width="100%" height='100%' style={{borderRadius:'50%'}}/>,
     },
 
     {
@@ -167,10 +173,10 @@ export const experiences = [
         I have developed web application with PHP, desktop application with Java, console application with C++. `,
         duration: "May 2018 – May 2020",
         reflink: "",
-        contentStyle:{ background: 'rgb(33, 150, 243)', color: '#fff' },
-        contentArrowStyle:{ borderRight: '7px solid  rgb(33, 150, 243)'},
-        iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-        icon: <MdSchool/>,
+        contentStyle:{ background: 'rgb(0, 0, 0, 0.2)', color: '#fff' },
+        contentArrowStyle:{ borderRight: '7px solid  rgb(0, 0, 0, 0.2)'},
+        iconStyle: { background: 'rgb(0, 0, 0, 0.2)', color: '#fff' },
+        icon: <Image src={APULogo} width="100%" height='100%' style={{borderRadius:'50%'}}/>,
     },
 
 ]
