@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.487eb68e.css",
-    "main.js": "/Portfolio/static/js/main.7a6719ba.js",
+    "main.css": "/Portfolio/static/css/main.f8f47435.css",
+    "main.js": "/Portfolio/static/js/main.ae36490e.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/RCCE1.jpg": "/Portfolio/static/media/RCCE1.bafb5310735feae7ee26.jpg",
     "static/media/profileImage.jpg": "/Portfolio/static/media/profileImage.1b101f3f6e87bbbbf8ae.jpg",
     "static/media/DiplomaAPU.jpg": "/Portfolio/static/media/DiplomaAPU.a750fb3adb4593522b41.jpg",
     "static/media/Comingsoon.jpg": "/Portfolio/static/media/Comingsoon.31b2ad9db99c33147227.jpg",
     "static/media/RCCE2_complete.jpg": "/Portfolio/static/media/RCCE2_complete.4839e060e9e835872a97.jpg",
+    "static/media/logoAPU.jpg": "/Portfolio/static/media/logoAPU.e6af995bb16c9fec568f.jpg",
     "static/media/DegreeAPU.jpg": "/Portfolio/static/media/DegreeAPU.444ffce195e429f3a0b1.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.487eb68e.css.map": "/Portfolio/static/css/main.487eb68e.css.map",
-    "main.7a6719ba.js.map": "/Portfolio/static/js/main.7a6719ba.js.map",
+    "main.f8f47435.css.map": "/Portfolio/static/css/main.f8f47435.css.map",
+    "main.ae36490e.js.map": "/Portfolio/static/js/main.ae36490e.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.487eb68e.css",
-    "static/js/main.7a6719ba.js"
+    "static/css/main.f8f47435.css",
+    "static/js/main.ae36490e.js"
   ]
 }
