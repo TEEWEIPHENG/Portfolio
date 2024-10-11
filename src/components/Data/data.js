@@ -30,87 +30,66 @@ export const introduction = {
 export const skillsets = [
     {
         name:"Penetration Testing",
-        field: "Cybersecurity",
-        proficiency:"40",
-        describe:`Learnt and practiced from bug bounty program, 
-        RCCE training, Try Hack Me, Hack The Box, etc.`,
-        child: [
-            "Metasploit",
-            "Burpsuite",
-            "Nmap",
-        ],
+        proficiency:"50",
+        describe:"",
+    },
+    {
+        name:"Burp Suite",
+        proficiency:"50",
+        describe:"",
+    },
+    {
+        name:"Nmap",
+        proficiency:"50",
+        describe:"",
     },
     {
         name:"Digital Forensic",
-        field:"Cybersecurity",
         proficiency:"10",
         describe:"",
-        child: [
-            "SIEM",
-        ],
     },
     {
         name:"Python",
-        field:"Software Development",
         proficiency:"60",
         describe:"",
-        child: [
-            "Django",
-        ],
     },
     {
         name:"JavaScript",
-        field:"Software Development",
         proficiency:"60",
         describe:"",
-        child: [
-            "JQuery",
-            "AJAX",
-            "React JS",
-        ],
     },
     {
-        name:"C# ASP.NET",
-        field:"Software Development",
-        proficiency:"60",
+        name:"C#",
+        proficiency:"100",
         describe:"",
-        child: [
-            "CodeIgnitor",
-        ],
+    },
+    {
+        name:"ASP .NET",
+        proficiency:"100",
+        describe:"",
     },
     {
         name:"PHP",
-        field:"Software Development",
-        proficiency:"70",
+        proficiency:"50",
         describe:"",
-        child: [
-            "CodeIgnitor",
-        ],
     },
     
     {
-        name:"Web development",
-        field:"Software Development",
-        proficiency:"90",
+        name:"React JS",
+        proficiency:"80",
         describe:"",
-        child: [
-            "HTML5",
-            "CSS3",
-            "JavaScript",
-        ],
     },
     {
         name:"SQL",
-        field:"Database",
         proficiency:"70",
         describe:"",
-        child: [
-            "MySQL",
-            "SQLite",
-            "",
-        ],
     },
-]
+    {
+        name:"Jenkins",
+        proficiency:"60",
+        describe:"",
+    },
+].sort((a, b) => b.proficiency - a.proficiency);
 
 
 export const experiences = [
