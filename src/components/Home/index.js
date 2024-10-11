@@ -2,33 +2,45 @@ import React from 'react';
 import {introduction} from "../Data/data";
 import "./style.css";
 import profileImage from "../../assets/profileImage.jpg";
-import {Col, Container, Image, Row} from 'react-bootstrap';
+import {Col, Container, Image, Row, Button} from 'react-bootstrap';
 import Skillsets from '../common/Skillsets';
 import SocialList from '../common/SocialList';
+
 function Home() {
- 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '../../assets/CV/CV.docx'; // Replace with the actual path to your Word file
+    link.download = 'TeeWeiPheng_CV.docx'; // Replace with the desired file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
   return (
     <Container>
       <Row className='about'>
         <Col xs={12} md={4}>
-          <Image src={profileImage} fluid rounded className='profile-img'/>
+          <Image src={profileImage} fluid roundedCircle className='profile-img'/>
         </Col>
         <Col xs={12} md={8} className='details'>
-          <h2 className='person-position'>{introduction.title}</h2>
-          <div className='positions-list-div'>
-            <ul className='positions-list'>
-              {introduction.positionsList.map(pos=>{
-                return (
-                  <li>&#60;<span className='imp-color'>{pos}</span>&nbsp;&#47;&#62;</li>
-                );
-              }
-              )}
-            </ul>
-          </div>     
+          <Row>
+            <Col md={12}>
+              <p>Hello I'm</p>
+            </Col>
+            <Col md={12}>
+              <h2 className='person-position'>{introduction.title}</h2>
+            </Col>
+            <Col md={12}>
+              <SocialList/>
+            </Col>
+            <Col md={12}>
+              <Button variant="outline-light" className='button' onClick={handleDownload}>Download CV</Button>{' '}
+              <Button variant="dark" className='button' >Contact Me</Button>
+            </Col>
+          </Row>
         </Col>
       </Row>
       <Skillsets/>
-      <SocialList/>
     </Container>
   )
 }

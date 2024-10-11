@@ -1,21 +1,13 @@
-.social-contact {
-    position: fixed; /* Keep it fixed in place while scrolling */
-    right: 20px; /* Position from the right side */
-    top: 80%; /* Center it vertically */
-    transform: translateY(-50%); /* Adjust for true vertical centering */
-    z-index: 1000; /* Ensure it stays above other content */
-}
-  
+
 .social-list {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Stack items vertically */
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
 }
   
 .social-list li {
-    margin: 10px 0; /* Space between items */
+    margin-right: 10px; /* Space between items */
 }
   
 .social-list a {

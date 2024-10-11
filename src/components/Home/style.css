@@ -23,12 +23,28 @@
     font-size: large;
 }
 .profile-img{
-    border-radius: 10px; 
+    box-shadow: 5px 5px 20px #000;
+    width: 70%;
+    border: 1px solid white; 
     object-fit: cover;
+}
+
+.button{
+    margin: 10px 10px 0 0;
 }
 
 @media screen and (max-width: 1000px) {
     .profile-img{
-        max-width: 60%;
+        width: 100%;
+        margin: 0;
+    }
+    .about{
+        padding: 0;
+    }
+    .details{
+        padding: 20px 50px;
+        margin-top: -100px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 50px;
     }
 }
