@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f8f47435.css",
-    "main.js": "/Portfolio/static/js/main.ae36490e.js",
+    "main.css": "/Portfolio/static/css/main.bcde5577.css",
+    "main.js": "/Portfolio/static/js/main.647277a0.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/RCCE1.jpg": "/Portfolio/static/media/RCCE1.bafb5310735feae7ee26.jpg",
     "static/media/profileImage.jpg": "/Portfolio/static/media/profileImage.1b101f3f6e87bbbbf8ae.jpg",
@@ -11,12 +11,12 @@
     "static/media/logoAPU.jpg": "/Portfolio/static/media/logoAPU.e6af995bb16c9fec568f.jpg",
     "static/media/DegreeAPU.jpg": "/Portfolio/static/media/DegreeAPU.444ffce195e429f3a0b1.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.f8f47435.css.map": "/Portfolio/static/css/main.f8f47435.css.map",
-    "main.ae36490e.js.map": "/Portfolio/static/js/main.ae36490e.js.map",
+    "main.bcde5577.css.map": "/Portfolio/static/css/main.bcde5577.css.map",
+    "main.647277a0.js.map": "/Portfolio/static/js/main.647277a0.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8f47435.css",
-    "static/js/main.ae36490e.js"
+    "static/css/main.bcde5577.css",
+    "static/js/main.647277a0.js"
   ]
 }
