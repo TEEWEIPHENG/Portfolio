@@ -26,3 +26,9 @@
     border-radius: 10px; 
     object-fit: cover;
 }
+
+@media screen and (max-width: 1000px) {
+    .profile-img{
+        max-width: 60%;
+    }
+}

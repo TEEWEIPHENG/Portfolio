@@ -10,10 +10,10 @@ function Home() {
   return (
     <Container>
       <Row className='about'>
-        <Col xs={4}>
+        <Col xs={12} md={4}>
           <Image src={profileImage} fluid rounded className='profile-img'/>
         </Col>
-        <Col xs={8} className='details'>
+        <Col xs={12} md={8} className='details'>
           <h2 className='person-position'>{introduction.title}</h2>
           <div className='positions-list-div'>
             <ul className='positions-list'>

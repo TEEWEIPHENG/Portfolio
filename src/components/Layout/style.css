@@ -57,14 +57,27 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .navbar-brand{
-        margin-left: 20px;
+    .navbar{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: none;
     }
-    #responsive-navbar-nav{
-        text-align: left;
-        margin-top: 10px;
-        /* display: flex;
-        justify-content: center;
-        flex-direction: column; */
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-item-list{
+        justify-content: center; /* Center navbar items in mobile view */
+        width: 100%; /* Ensure the navbar items take up the full width */
+        display: flex; /* Use flexbox for centering */
+        flex-direction: row;
+    }
+    .navbar-item{
+        margin: 0 7px;
+        padding: 0;
+        text-align: center; /* Ensure text is centered */
+    }
+    .navbar-item.active::after {
+        bottom: -9px;
     }
 }
