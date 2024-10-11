@@ -1,5 +1,5 @@
 import React from 'react';
-import {introduction} from "../Data/data";
+import {introduction, contactInfo } from "../Data/data";
 import "./style.css";
 import profileImage from "../../assets/profileImage.jpg";
 import {Col, Container, Image, Row, Button} from 'react-bootstrap';
@@ -9,13 +9,15 @@ import SocialList from '../common/SocialList';
 function Home() {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '../../assets/CV/CV.docx'; // Replace with the actual path to your Word file
+    link.href = 'https://github.com/TEEWEIPHENG/Portfolio/raw/refs/heads/main/src/assets/CV/CV.docx'; // Replace with the actual path to your Word file
     link.download = 'TeeWeiPheng_CV.docx'; // Replace with the desired file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
-  
+  const handleContactMe = () => {
+    window.open(contactInfo.whatsapp, '_blank');
+  };
   return (
     <Container>
       <Row className='about'>
@@ -35,7 +37,7 @@ function Home() {
             </Col>
             <Col md={12}>
               <Button variant="outline-light" className='button' onClick={handleDownload}>Download CV</Button>{' '}
-              <Button variant="dark" className='button' >Contact Me</Button>
+              <Button variant="dark" className='button' onClick={handleContactMe}>Contact Me</Button>
             </Col>
           </Row>
         </Col>
