@@ -21,7 +21,7 @@ function Skillsets() {
       <Row className='skillsets'>
         <h1>My Skills</h1>
         {skillsets.map((skill) => (
-          <Col xs={6} lg={4} xl={3}>
+          <Col xs={6} lg={4}>
             <Row className='skills'>
                 <Col xs={12} md={5}>{skill.name}</Col>
                 <Col xs={12} md={4}>{renderStars(skill.proficiency)}</Col>

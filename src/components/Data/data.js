@@ -10,6 +10,9 @@ import { Image } from 'react-bootstrap';
 import SwiftXICon from '../../assets/Logo/swiftXIcon.jpg';
 import APULogo from '../../assets/Logo/logoAPU.jpg';
 import goSMAC from '../../assets/Logo/gosmac_logo.jpg';
+import Django from '../../assets/django.png'
+import ComingSoon from '../../assets/Comingsoon.jpg';
+import ReactJS from '../../assets/reactjs.png';
 
 export const contactInfo = {
     linkedin: "https://www.linkedin.com/in/teeweipheng",
@@ -100,8 +103,8 @@ export const experiences = [
         I mainly practiced C# APS .NET and React JS with Visual Studio, VS Code, SSMS, Postman, Git, etc.`,
         duration: "November 2023 - Current",
         reflink: "",
-        contentStyle:{ background: 'rgb(238, 210, 2, 0.5)', color: '#fff' },
-        contentArrowStyle:{ borderRight: '7px solid  rgb(238, 210, 2, 0.5)'},
+        contentStyle:{ background: 'rgb(0, 0, 0, 0.2)', color: '#fff' },
+        contentArrowStyle:{ borderRight: '7px solid rgb(0, 0, 0, 0.2)'},
         iconStyle: { background: 'rgb(0, 0, 0, 0.2)', color: '#fff' },
         icon: <Image src={EtiqaIcon} width="100%" height='100%' style={{borderRadius:'50%'}}/>,
     },
@@ -185,7 +188,8 @@ export const projects = [
     {
         title: "Threat Intelligence Platform",
         describe: "Threat Intelligence Platform is my Final Year Project. It provide user to manage threats and communicate with other team member.",
-        refLink:"https://www.youtube.com/embed/dRXHXnF2bCE",
+        youtube:"https://www.youtube.com/embed/dRXHXnF2bCE",
+        github: "",
         techs:[
             "Django",
             "JavaScript",
@@ -194,7 +198,7 @@ export const projects = [
             "VirusTotal API",
         ],
         duration: "Completed at July 2022",
-        field: "Web Development, Cybersecurity"
+        carousel: Django
     },
     {
         title: "Portfolio",
@@ -202,13 +206,14 @@ export const projects = [
         I learnt the React JS through YouTube's tutorial video and reading the documentation. 
         After implementation stage, I have deployed the portfolio website to GitHub page.
         `,
-        refLink:"",
+        youtube: "",
+        github:"https://github.com/TEEWEIPHENG/Portfolio.git",
         techs:[
             "React JS",
             "GitHub Page",
         ],
         duration: "Completed at July 2022",
-        field: "Web Development",
+        carousel: ReactJS,
 
     },
 ]

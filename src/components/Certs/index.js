@@ -4,37 +4,27 @@ import { certificates } from '../Data/data';
 import './style.css';
 function Certificates() {
   return (
-    <div className='certificates'>
       <Container>
         <Row xs={1} md={2} className="g-4">
           {certificates.map(cert=>{
             return(
               <Col>
-                <Card className='bg-dark text-white'   style={{minHeight:'40rem'}}>
-                  <Card.Header style={{minHeight:'5rem'}}>
-                    <Card.Title>
-                      {cert.title}
-                    </Card.Title>
-                  </Card.Header>
-                  <Card.Body>
-                    <Card.Img variant='top' src={cert.img} className='certImg'/>
-                    <Card.Text>
-                    <div style={{display:"flex", justifyContent:"space-evenly"}}>
-                      <div className='text-muted'>Archive at</div> 
-                      <div>{cert.achieveDate}</div>
-                    </div>
+                <Card className='bg-dark text-white h-100' style={{margin: '20px 40px', padding: '10px'}}>
+                  <Card.Img variant='top' src={cert.img} className='certImg'/>
+                  
+                  <Card.Body  className="d-flex flex-column">
+                    <Card.Title className="mb-4" style={{paddingTop: '10px'}}>{cert.title}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted" style={{}}>{cert.provider}</Card.Subtitle>
+                    <Card.Text className="mt-auto">
+                      Archive at {cert.achieveDate}
                     </Card.Text>
                   </Card.Body>
-                  <Card.Footer>
-                    <small className='text-muted'>Provided by </small>{cert.provider}
-                  </Card.Footer>
                 </Card>
               </Col>
             )
           })}
         </Row>
       </Container>
-    </div>
   )
 }
 
