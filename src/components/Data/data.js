@@ -1,17 +1,13 @@
-import diplomaAPUCert from '../../assets/Certs/DiplomaAPU.jpg';
-import RCCE1Cert from '../../assets/Certs/RCCE1.jpg';
-import RCCE2CompleteCert from '../../assets/Certs/RCCE2_complete.jpg';
-import degreeAPUCert from '../../assets/Certs/DegreeAPU.jpg';
-import {FaPhp} from 'react-icons/fa';
-import {AiFillWindows} from 'react-icons/ai';
-import {MdSchool} from 'react-icons/md';
-import EtiqaIcon from '../../assets/Logo/etiqaIcon.jpg';
+import diplomaAPUCert from '../../assets/DiplomaAPU.jpg';
+import RCCE1Cert from '../../assets/RCCE1.jpg';
+import RCCE2CompleteCert from '../../assets/RCCE2_complete.jpg';
+import degreeAPUCert from '../../assets/DegreeAPU.jpg';
+import EtiqaIcon from '../../assets/etiqaIcon.jpg';
 import { Image } from 'react-bootstrap';
-import SwiftXICon from '../../assets/Logo/swiftXIcon.jpg';
-import APULogo from '../../assets/Logo/logoAPU.jpg';
-import goSMAC from '../../assets/Logo/gosmac_logo.jpg';
+import SwiftXICon from '../../assets/swiftXIcon.jpg';
+import APULogo from '../../assets/logoAPU.jpg';
+import goSMAC from '../../assets/gosmac_logo.jpg';
 import Django from '../../assets/django.png'
-import ComingSoon from '../../assets/Comingsoon.jpg';
 import ReactJS from '../../assets/reactjs.png';
 
 export const contactInfo = {
