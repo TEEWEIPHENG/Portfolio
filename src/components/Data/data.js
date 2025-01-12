@@ -212,6 +212,19 @@ export const projects = [
         carousel: ReactJS,
 
     },
+    {
+        title: "CyberTIP",
+        describe: "A web based Threat Intelligence Platform. Developed with microservice architecture, C# ASP.NET.",
+        youtube:"",
+        github: "https://github.com/CyberTIP/",
+        techs:[
+            "C#",
+            "ASP .NET",
+            "React JS"
+        ],
+        duration: "Completed at July 2022",
+        carousel: ReactJS
+    },
 ]
 
 export const certificates = [
