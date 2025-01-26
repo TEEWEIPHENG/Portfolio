@@ -1,19 +1,14 @@
 .caption-block{
-    background-color: rgba(0,0,0,0.7);
     border-radius: 20px;
     padding: 4rem;
-}
-.caption-block h5{
-    color: rgb(219, 219, 219);
 }
 
 .vertical-timeline-element-date{
-    background-color: rgba(0,0,0,0.7);
-    border-radius: 20px;
     padding: 4rem;
-    text-align: center !important;
 }
-
+.vertical-timeline::before{
+    background: rgba(0,0,0,0.05) !important;
+}
 @media screen and (max-width: 1000px) {
     .caption-block{
         padding: 20px;

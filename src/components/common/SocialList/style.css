@@ -7,14 +7,14 @@
 }
   
 .social-list li {
-    margin-right: 10px; /* Space between items */
+    margin-right: 10px; 
 }
   
 .social-list a {
-    text-decoration: none; /* Remove underline */
-    color: #ffffff; /* Default icon color */
-    font-size: 30px; /* Set icon size */
-    transition: color 0.3s; /* Smooth color transition on hover */
+    text-decoration: none; 
+    font-size: 30px;
+    transition: color 0.3s; 
+    color: var(--color-text);
 }
   
 .social-list a:hover {

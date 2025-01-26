@@ -19,7 +19,6 @@ function Skillsets() {
 
   return (
       <Row className='skillsets'>
-        <h1>My Skills</h1>
         {skillsets.map((skill) => (
           <Col xs={6} lg={4}>
             <Row className='skills'>

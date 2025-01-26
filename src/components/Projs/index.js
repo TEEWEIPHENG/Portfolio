@@ -1,6 +1,6 @@
 import React from 'react'
 import {projects} from '../Data/data';
-import {Carousel, Container, Image, Row, Col, Button} from 'react-bootstrap';
+import {Card, Container, Image, Row, Col, Button} from 'react-bootstrap';
 import './style.css';
 import { FaYoutube , FaGithub} from "react-icons/fa";
 
@@ -8,29 +8,40 @@ function Projects() {
   console.log(projects)
   return (
     <Container className='project-container'>
-      <Carousel>
+      <h2>Projects</h2>
+      <Row>
         {projects.map(project=>{
           return (
-            <Carousel.Item>
-              <Image src={project.carousel} rounded className='carousel-image'/>
-              <Carousel.Caption className="carousel-caption">
-                <h2>{project.title}</h2>
-                <p style={{textAlign:"justify"}}>{project.describe}</p>
-                <Row>
-                  {project.techs.map((tech)=> <Col xs={6} md={4} xl={3} style={{margin: '10px 0'}}><Button variant="primary">{tech}</Button></Col>)}
-                </Row>
-                <Row>
-                  <Col>
-                    <a href={project.youtube} target='_blank' className='ref-icon'><FaYoutube color='#FF0000' /></a>
-                    <a href={project.github} target='_blank' className='ref-icon'><FaGithub color='#fff' /></a>
-                  </Col>
-                </Row>
-                
-              </Carousel.Caption>
-            </Carousel.Item>
+            <Col>
+            <Card className='text-center' style={{ padding: '10px'}}>
+              <Card.Img variant='top' src={project.carousel} className='certImg'/>
+              
+              <Card.Body  className="d-flex flex-column">
+                <Card.Title className="mb-4" style={{paddingTop: '10px'}}>{project.title}</Card.Title>
+                <Card.Text className="mt-auto">
+                  {project.describe}
+                </Card.Text>
+                  {
+                    project.youtube
+                    ? <Card.Link href={project.youtube} target='_blank' className='ref-icon'>
+                        <FaYoutube color='#FF0000'/>
+                      </Card.Link>
+                    : false 
+                  }
+                  {
+                    project.github
+                    ? <Card.Link href={project.github} target='_blank' className='ref-icon'>
+                        <FaGithub color='#000'/>
+                      </Card.Link>
+                    : false
+                  }
+
+              </Card.Body>
+            </Card>
+          </Col>
           )
         })}
-      </Carousel>
+      </Row>
     </Container>
   )
 }

@@ -1,83 +1,85 @@
-.navbar{
-    background-color: rgba(0, 0, 0, 0.5);
+.navbar {
+    background-color: rgba(255, 248, 248, 0.98);
     padding: 10px 0;
-    border-radius: 10px;
-    border:#bdc3c7 2px solid;
-    margin: 20px auto;
-    justify-content: center; /* Center navbar content */
-    max-width: 80%;
-}
-
-/* Style for Navbar.Brand */
-.navbar-brand {
-    color: white !important; /* Set default color */
+    margin: 0 auto;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
     text-decoration: none;
-    margin-left: 50px;
-    margin-right: 60px;
-}
-
-.navbar-item{
-    color: white;
+    margin: 0 60px;
+    color: var(--color-neutral);
+    font-weight: bolder;
+  }
+  
+  .navbar-item {
+    font-weight: bold;
     text-align: center;
     margin: 0 20px;
     padding: 0 5px;
-    position: relative; /* Required for the ::after element */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-.navbar-item.active::after {
+    position: relative;
+    transition: color 0.3s ease;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+  
+  .navbar-item.active::after {
     content: '';
     position: absolute;
-    bottom: -15px;
-    left:  50%;
+    bottom: -10px;
+    left: 50%;
     transform: translateX(-50%);
     width: 70%;
     height: 5px;
-    background-color: #d8d8d8; /* The color of the shape */
-    border-radius: 20px; /* Makes the shape rounded */
+    background-color: var(--color-neutral);
+    border-radius: 20px;
     transition: width 0.5s ease, background-color 0.5s ease;
-}
-
-/* On hover, change the color */
-.navbar-item:hover {
-    color: #a5a5a5 !important; /* Set desired color on hover */
-}
-
-.navbar-item.active:hover::after {
-    background-color: #a5a5a5; /* Slightly darker on hover */
-    width: 90%; /* Slightly larger on hover */
-}
-/* Override the default toggle button icon color */
-.navbar-toggler {
-    border-color: white; /* Set the border color to white */
-}
-
-/* Change the color of the collapsed navbar icon (bars) */
-.navbar-toggler-icon {
+  }
+  
+  .navbar-item:hover {
+    color: var(--color-neutral);
+  }
+  
+  .navbar-item.active:hover::after {
+    background-color: var(--color-neutral);
+    width: 90%;
+  }
+  
+  .navbar-toggler {
+    border-color: white;
+  }
+  
+  .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-@media only screen and (max-width: 1000px) {
-    .navbar{
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-        max-width: none;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .navbar {
+      width: 100%;
+      padding: 0 10px;
     }
-    .navbar-brand{
-        display: none;
+  
+    .navbar-brand {
+      display: none;
     }
-    .navbar-item-list{
-        justify-content: center; /* Center navbar items in mobile view */
-        width: 100%; /* Ensure the navbar items take up the full width */
-        display: flex; /* Use flexbox for centering */
-        flex-direction: row;
+  
+    .navbar-item-list {
+      justify-content: center;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
     }
-    .navbar-item{
-        margin: 0 7px;
-        padding: 0;
-        text-align: center; /* Ensure text is centered */
+  
+    .navbar-item {
+      margin: 0 7px;
+      padding: 0;
     }
+  
     .navbar-item.active::after {
-        bottom: -9px;
+      bottom: -9px;
     }
-}
+  }
+  

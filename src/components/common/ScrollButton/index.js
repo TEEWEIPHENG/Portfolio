@@ -28,7 +28,7 @@ const scrollToTop = () =>{
 window.addEventListener('scroll', toggleVisible);
 
 return (
-	<Button>
+	<Button variant='dark'>
 	<IoIosArrowUp onClick={scrollToTop}
 	style={{display: visible ? 'inline' : 'none'}} />
 	</Button>
