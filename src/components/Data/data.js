@@ -21,7 +21,7 @@ export const contactInfo = {
 export const introduction = {
     name: "TEE WEI PHENG",
     title: "Full Stack Developer",
-    description: "Dynamic Full Stack Developer with over 2 years of experience specializing in C# ASP.NET, React JS, and SQL. Passionate about cybersecurity and delivering secure and scalable solutions.",
+    description: `Dynamic Full Stack Developer with over 2 years of experience specializing in C# ASP.NET, React JS, and SQL. Passionate about cybersecurity and delivering secure and scalable solutions.`,
 };
 
 export const skillsets = [
@@ -70,21 +70,22 @@ export const projects = [
     {
         priority: 1,
         title: "Threat Intelligence Platform",
-        describe: "A web-based platform  microservices architecture for threat intelligence.",
+        describe: `A web-based threat intelligence platform. Designed with microservices architecture with API gateway.`,
         youtube: "",
         github: "https://github.com/CyberTIP",
         techs: ["C#", "ASP .NET", "React JS", "SQL"],
-        duration: "Completed at July 2022",
+        status: "In Progress",
         carousel: ReactJS,
     },
     {
         priority: 2,
         title: "Portfolio",
-        describe: `A static web application to showcase professional experiences and skills. Designed and deployed using React JS and GitHub Pages.`,
+        describe: `A static web application to showcase professional experiences and skills. 
+        Designed and deployed using React JS and GitHub Pages.`,
         youtube: "",
         github: "https://teeweipheng.github.io/Portfolio",
         techs: ["React JS", "GitHub Pages"],
-        duration: "Completed at July 2022",
+        status: "Deployed",
         carousel: ReactJS,
     },
 ].sort((a, b) => b.priority + a.priority);
