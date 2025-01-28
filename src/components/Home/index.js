@@ -22,7 +22,7 @@ function Home() {
   return (
     <Container>
       <Row className='about'>
-        <Col xs={12} md={4}>
+        <Col xs={12} md={4} className='text-center'>
           <Image src={profileImage} fluid roundedCircle className='profile-img'/>
         </Col>
         <Col xs={12} md={7} className='details'>

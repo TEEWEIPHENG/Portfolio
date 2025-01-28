@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 1000px) {
     .profile-img{
-        width: 50%;
+        width: 100%;
         margin: 0;
     }
     .about{
@@ -49,5 +49,12 @@
         padding: 20px 50px;
         border-radius: 50px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .profile-img{
+        width: 50%;
+        margin: 0;
     }
 }

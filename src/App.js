@@ -12,18 +12,21 @@ function App() {
     <div className="App">
       <Router>
         <Layout />
-        <section id="home">
-          <Home />
-        </section>
-        <section id="experiences">
-          <Experiences />
-        </section>
-        <section id="projects">
-          <Projects />
-        </section>
-        <section id="certificates">
-          <Certificates />
-        </section>
+        <div className='contents'>
+          <section id="home">
+            <Home />
+          </section>
+          <section id="experiences">
+            <Experiences />
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="certificates">
+            <Certificates />
+          </section>
+        </div>
+       
         {/* <ScrollButton /> */}
       </Router>
     </div>

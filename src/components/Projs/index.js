@@ -12,9 +12,9 @@ function Projects() {
       <Row>
         {projects.map(project=>{
           return (
-            <Col>
-            <Card className='text-center' style={{ padding: '10px'}}>
-              <Card.Img variant='top' src={project.carousel} className='certImg'/>
+            <Col xs={12} md={6}>
+            <Card className='text-center' style={{ padding: '10px', margin: '10px'}}>
+              <Card.Img variant='top' src={project.carousel} className='carousel-image'/>
               
               <Card.Body  className="d-flex flex-column">
                 <Card.Title className="mb-4" style={{paddingTop: '10px'}}>{project.title}</Card.Title>

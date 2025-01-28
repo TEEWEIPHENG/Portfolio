@@ -70,7 +70,7 @@ export const projects = [
     {
         priority: 1,
         title: "Threat Intelligence Platform",
-        describe: "Developed a web-based platform leveraging microservices architecture for threat intelligence.",
+        describe: "A web-based platform  microservices architecture for threat intelligence.",
         youtube: "",
         github: "https://github.com/CyberTIP",
         techs: ["C#", "ASP .NET", "React JS", "SQL"],
@@ -80,7 +80,7 @@ export const projects = [
     {
         priority: 2,
         title: "Portfolio",
-        describe: `Created a static web application to showcase professional experiences and skills. Designed and deployed using React JS.`,
+        describe: `A static web application to showcase professional experiences and skills. Designed and deployed using React JS and GitHub Pages.`,
         youtube: "",
         github: "https://teeweipheng.github.io/Portfolio",
         techs: ["React JS", "GitHub Pages"],
