@@ -92,18 +92,6 @@ export const projects = [
 
 export const certificates = [
     {
-        title: "Bachelor of Computer Science (Cyber Security)",
-        provider: "Asia Pacific University",
-        achieveDate: "August 2022",
-        img: degreeAPUCert,
-    },
-    {
-        title: "Diploma in Information Technology specializing in Software Engineering",
-        provider: "Asia Pacific University",
-        achieveDate: "May 2020",
-        img: diplomaAPUCert,
-    },
-    {
         title: "Rocheston Certified Cybersecurity Engineer (RCCE) Level 2",
         provider: "Rocheston",
         achieveDate: "September 2022",
